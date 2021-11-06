@@ -1,0 +1,203 @@
+/* main styles */
+:root{
+    --red:#d43031;
+    --white:#eee;
+    --grey:#777;
+}
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', serif;
+   font-size:16px;
+  
+}
+p{
+    color:var(--grey) ;
+    font-size: 16px;
+    margin-top: 3rem;
+}
+.mr-top{
+margin-top: 6rem;
+}
+
+/* navbar styles*/
+
+.nav-link:hover{
+    color: var(--red) !important;
+   }
+
+
+
+/* header styles*/
+header{
+    height: 95vh;
+    
+    background-image: url("../imgs/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-color: rgba(12, 12, 12, 0.377);
+}
+
+.content{
+    position: relative;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    
+}
+.gusto{
+  
+   
+   margin: 7rem 0;
+    font-family: 'Birthstone', cursive;
+    font-size:11rem;
+
+}
+
+.content h3{
+    margin-top:9rem;
+}
+/* special styles*/
+#special{
+  
+    margin-bottom: 9rem;
+}
+.title{
+    color:#333;
+   text-transform: uppercase;
+   text-align: center;
+   
+}
+.title::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: var(--red);
+    margin-left: -35px;
+}
+
+.dish{
+text-align: center;
+ margin-right:2rem;
+}
+.dish h3{
+    
+    margin-bottom: 2rem;
+}
+.dish img{
+    width: 95%;
+}
+
+/* about styles*/
+
+.about-content{
+    background-color: var(--white);
+    color:var(--grey) ;
+    padding: 6rem;
+}
+img{
+   width:50%;
+}
+.story{
+text-align: start;
+
+}
+.story::after{
+    margin-left:65px;
+}
+/*menu styles*/
+
+.menu-item{
+    width:85%;
+    font-size: 0.5rem;
+    margin-top:4rem;
+    font-weight:lighter;
+}
+.menu-item p{
+    margin-top: 0;
+}
+.price{
+  float: right;
+}
+
+/* gallary styles*/
+.imgs img{
+    width: 25%;
+}
+/* chef styles*/
+.chef{
+    background-color: white;
+}
+.our-chef{
+    text-align: start;
+}
+.our-chef::after{
+    margin-left:4px;
+}
+
+
+
+
+/* contact styles*/
+#contact{
+   
+    background-color:#333;
+}
+
+._contact{
+    color:var(--grey) ;
+}
+.infos{
+    margin-top: 10px;
+}
+.info{
+    text-align: center;
+}
+
+._form{
+    width:60%;
+}
+input{
+   color: var(--grey);
+   border-style: none;
+}
+.message-btn{
+    border-style: none;
+    padding: 10px 20px;
+    border: 2px solid #777;
+    background-color: transparent;
+    color: var(--grey);
+    margin-left:39%;
+}
+button:hover{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    transition: all .2s linear;
+}
+@media (max-width:768px) {
+    .about-img {width: 100%;}
+  } 
+  @media (max-width:768px) {
+    .imgs img {
+        width:48%;
+        margin:0.2rem;
+      
+
+    }
+  } 
+  
